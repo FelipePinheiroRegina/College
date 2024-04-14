@@ -7,7 +7,7 @@ connect = psycopg2.connect(database = 'postgres',
                            port     = '5432')
 cursor = connect.cursor()
 
-cursor.execute('''INSERT INTO products(id, name, price) VALUES(25, 'Product_25', 250.00);''')
+cursor.execute('''INSERT INTO products(id, name, price) VALUES(60, 'Product_60', 260.00);''')
 print('Insert data success!')
 
 connect.commit()
